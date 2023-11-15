@@ -19,6 +19,6 @@ Our project, "SmartWaste," is a machine learning approach that revolutionizes ga
 - Fourth: Solution: Utilize  Machine Learning  for data analytics
 
 ## Credit: 
-1- Bhany Prakash
+1- Bhanu Prakash
 2- Nandan Ankireddy
 3- Maha Laxmi
