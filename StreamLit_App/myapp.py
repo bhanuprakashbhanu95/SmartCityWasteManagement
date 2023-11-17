@@ -408,15 +408,18 @@ def main():
 				sample_dir_path = Path(dataset_dir) / 'metal'
 				# Get paths of the first few images in the directory
 				sample_images_paths = list(sample_dir_path.glob('*.jpg'))[:3]
-				#summary_result = display_images(sample_images_paths, ['metal']*len(sample_images_paths)))
+				summary_result = display_images(sample_images_paths, ['metal']*len(sample_images_paths))
+				sample_titles = ['metal']*len(sample_images_paths)
+				display_images_on_streamlit(sample_images_paths, sample_titles)                
 			elif summary_options == 'plastic':
 				#st.text(placeholder)
 				# Path to one of the trash type directories
 				sample_dir_path = Path(dataset_dir) / 'plastic'
 				# Get paths of the first few images in the directory
 				sample_images_paths = list(sample_dir_path.glob('*.jpg'))[:3]
-				summary_result =display_images(sample_images_paths, ['plastic']*len(sample_images_paths))
-				summary_result
+				summary_result = display_images(sample_images_paths, ['plastic']*len(sample_images_paths))
+				sample_titles = ['plastic']*len(sample_images_paths)
+				display_images_on_streamlit(sample_images_paths, sample_titles)
 			elif summary_options == 'cardboard':
 				#st.text(placeholder)
 				 # Path to one of the trash type directories
@@ -424,7 +427,8 @@ def main():
 				# Get paths of the first few images in the directory
 				sample_images_paths = list(sample_dir_path.glob('*.jpg'))[:3]
 				summary_result = display_images(sample_images_paths, ['cardboard']*len(sample_images_paths))
-				summary_result
+				sample_titles = ['cardboard']*len(sample_images_paths)
+				display_images_on_streamlit(sample_images_paths, sample_titles)
 			elif summary_options == 'glass':
 				#st.text(placeholder)
 				# Path to one of the trash type directories
@@ -432,7 +436,8 @@ def main():
 				# Get paths of the first few images in the directory
 				sample_images_paths = list(sample_dir_path.glob('*.jpg'))[:3]
 				summary_result = display_images(sample_images_paths, ['glass']*len(sample_images_paths))
-				summary_result
+				sample_titles = ['glass']*len(sample_images_paths)
+				display_images_on_streamlit(sample_images_paths, sample_titles)
 			elif summary_options == 'Hazardous':
 				#st.text(placeholder)
 				# Path to one of the trash type directories
@@ -440,23 +445,26 @@ def main():
 				# Get paths of the first few images in the directory
 				sample_images_paths = list(sample_dir_path.glob('*.jpg'))[:3]
 				summary_result = display_images(sample_images_paths, ['Hazardous']*len(sample_images_paths))
-				summary_result
+				sample_titles = ['Hazardous']*len(sample_images_paths)
+				display_images_on_streamlit(sample_images_paths, sample_titles)
 			elif summary_options == 'Medical waste':
 				#st.text(placeholder)
 				# Path to one of the trash type directories
 				sample_dir_path = Path(dataset_dir) / 'Medical waste'
 				# Get paths of the first few images in the directory
 				sample_images_paths = list(sample_dir_path.glob('*.jpg'))[:3]
-				summary_result = display_images(sample_images_paths, ['Medical Waste']*len(sample_images_paths))
-				summary_result
+				summary_result = display_images(sample_images_paths, ['Medical waste']*len(sample_images_paths))
+				sample_titles = ['Medical waste']*len(sample_images_paths)
+				display_images_on_streamlit(sample_images_paths, sample_titles)
 			elif summary_options == 'Organic Waste':
 				#st.text(placeholder)
 				# Path to one of the trash type directories
 				sample_dir_path = Path(dataset_dir) / 'trash'
 				# Get paths of the first few images in the directory
 				sample_images_paths = list(sample_dir_path.glob('*.jpg'))[:3]
-				summary_result = display_images(sample_images_paths, ['trash']*len(sample_images_paths))  
-				summary_result
+				summary_result = display_images(sample_images_paths, ['trash']*len(sample_images_paths))
+				sample_titles = ['trash']*len(sample_images_paths)
+				display_images_on_streamlit(sample_images_paths, sample_titles)
 			st.success(summary_result)
 
         
